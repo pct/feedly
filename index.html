@@ -4,24 +4,16 @@
     <meta charset="UTF-8">
     <title>Feedly</title>
     <style>
-      #loading {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				margin-right: -50%;
-				transform: translate(-50%, -50%)
+      webview {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
       }
     </style>
-    <script src="./vendor/jquery.min.js"></script>
   </head>
   <body>
-    <img id="loading" src="./images/loading.gif" alt="">
-    <iframe id="iframe" src="https://feedly.com" frameborder="0" style="display:none"></iframe>
-  <script>
-    $(function(){
-      $('#loading').hide()
-      $('#iframe').show()
-    });
-  </script>
+    <webview id="webview" src="https://feedly.com" autosize="on" allowpopups></webview>
   </body>
 </html>
