@@ -7,3 +7,8 @@ simple feedly app built with electron, just a iframe url.
     $ cd feedly
     $ npm i
     $ electron-packager .
+
+# Another way to create simple website app
+
+    $ npm i -g nativefier
+    $ nativefier feedly.com
